@@ -1,0 +1,48 @@
+.\" $Id$
+.TH KOALATOPPM 1 1998-07-09 "Softwolves Software" ""
+koalatoppm \- convert Koala Painter to PPM format
+.SH SYNOPSIS
+.B koalatopps
+[+] [inputfile [outputfile]]
+.SH DESCRIPTION
+.B koalatoppm
+is a program that is used to convert between the Koala Painter
+image format (a popular Commodore 64 drawing program) and
+the portable pixmap format, ppm.
+.SH OPTIONS
+.TP
+.I +
+Expands the picture to 320x200 by enlarging each pixel to the
+double size, just like the Commodore 64 does in multicolour mode.
+.SH "DISTRIBUTED FILES"
+These files comes with the
+.B koalatoppm
+distribution:
+.PD 0
+.TP
+.I COPYING
+The GNU General Public License.
+.TP
+.I Makefile
+File used by
+.BR make (1)
+to automate compilation.
+.TP
+.I koalatoppm.c
+Source code for the program.
+.TP
+.I koalatoppm.1
+This manual page.
+.PD
+.SH BUGS
+The program will give an error message for Koala Painter files
+saved by AmicaPaint, but will convert them successfully.
+.SH "SEE ALSO"
+.BR ppm (5)
+.SH AUTHOR
+BASTEXT was written by Peter Karlsson.
+If you have bug-reports or questions, mail them to pk@abc.se.
+.PP
+A Softwolves Software (tm) Release in 1998.
+.PP
+This program is released under the GNU Public License.
