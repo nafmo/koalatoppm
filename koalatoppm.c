@@ -73,7 +73,7 @@ int main(int argc, char *argv[])
 {
 	int expand = 0;
 
-	if (argc < 1 || argc > 4 || (argc == 3 && !strcmp(argv[1], "+")))
+	if (argc < 1 || argc > 4)
 	{
 		printf("Usage: %s [+] [infile [outfile]]\n", argv[0]);
 		printf("           ^-expand picture to 320x200\n");
